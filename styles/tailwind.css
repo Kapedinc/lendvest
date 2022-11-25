@@ -1,0 +1,200 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #19d1b2;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.info{
+ @apply absolute lg:h-[36px] xl:h-[45px] 2xl:h-[51px] 3xl:h-[61px] inset-[0] justify-center m-[auto] lg:w-[35px] xl:w-[44px] 2xl:w-[50px] 3xl:w-[60px]; 
+}
+.div7{
+ @apply font-medium mb-[1px] text-bluegray_700 w-[auto]; 
+}
+.div8{
+ @apply font-normal lg:leading-[15px] xl:leading-[18px] 2xl:leading-[21px] 3xl:leading-[25px] xl:mb-[11px] 2xl:mb-[13px] 3xl:mb-[16px] lg:mb-[9px] not-italic text-bluegray_700 text-center w-[90%]; 
+}
+.div13{
+ @apply bg-teal_A400 border-bw5 border-cyan_200 border-solid flex font-semibold items-center lg:px-[14px] xl:px-[17px] 2xl:px-[20px] 3xl:px-[24px] rounded-radius50 text-white_A700 w-[52px]; 
+}
+.div15{
+ @apply bg-teal_A400 border-bw5 border-cyan_200 border-solid flex font-semibold items-center lg:px-[13px] xl:px-[16px] 2xl:px-[19px] 3xl:px-[22px] rounded-radius50 text-white_A700 w-[52px]; 
+}
+.div_Eight{
+ @apply absolute lg:h-[351px] xl:h-[439px] 2xl:h-[493px] 3xl:h-[592px] right-[0] top-[0] w-[48%]; 
+}
+.div18{
+ @apply font-normal not-italic text-white_A700 w-[auto]; 
+}
+.div20{
+ @apply bg-white_A700 items-center justify-start lg:py-[20px] xl:py-[25px] 2xl:py-[28px] 3xl:py-[34px] rounded-radius2 shadow-bs w-[100%]; 
+}
+.div21{
+ @apply font-normal lg:leading-[15px] xl:leading-[19px] 2xl:leading-[21px] 3xl:leading-[25px] mb-[1px] not-italic text-gray_601 w-[85%]; 
+}
+.HannahMaxwell{
+ @apply font-medium lg:mt-[3px] 2xl:mt-[4px] xl:mt-[4px] 3xl:mt-[5px] text-bluegray_700 w-[auto]; 
+}
+.Paidoffcredit{
+ @apply font-normal mt-[4px] not-italic text-gray_602 w-[auto]; 
+}
+.div23{
+ @apply font-normal lg:leading-[22px] xl:leading-[28px] 2xl:leading-[32px] 3xl:leading-[38px] lg:mb-[4px] 2xl:mb-[5px] xl:mb-[5px] 3xl:mb-[6px] not-italic text-center text-white_A700 w-[94%]; 
+}
+.div24{
+ @apply font-normal not-italic text-bluegray_901 w-[auto]; 
+}
+.div25{
+ @apply font-normal not-italic text-gray_603 w-[auto]; 
+}
+.https3A2F2Fs{
+ @apply lg:h-[49px] xl:h-[61px] 2xl:h-[68px] 3xl:h-[82px] w-[26%]; 
+}
+.div26{
+ @apply font-normal lg:leading-[15px] xl:leading-[19px] 2xl:leading-[21px] 3xl:leading-[25px] lg:mb-[3px] 2xl:mb-[4px] xl:mb-[4px] 3xl:mb-[5px] not-italic text-gray_601 w-[97%]; 
+}
+.a{
+ @apply font-normal mb-[1px] not-italic text-gray_602 w-[auto]; 
+}
+.divborder{
+ @apply absolute lg:h-[57px] xl:h-[71px] 2xl:h-[80px] 3xl:h-[95px] w-[100%]; 
+}
+.div28{
+ @apply lg:leading-[14px] xl:leading-[18px] 2xl:leading-[20px] 3xl:leading-[24px] xl:mb-[11px] 2xl:mb-[12px] 3xl:mb-[14px] lg:mb-[8px] not-italic text-gray_602 w-[96%]; 
+}
+.div30{
+ @apply font-medium lg:ml-[21px] xl:ml-[27px] 2xl:ml-[30px] 3xl:ml-[36px] text-white_A700 w-[auto]; 
+}
+.div32{
+ @apply lg:mb-[4px] xl:mb-[5px] 2xl:mb-[6px] 3xl:mb-[8px] text-bluegray_900 w-[auto]; 
+}
+.div34{
+ @apply font-normal lg:leading-[15px] xl:leading-[18px] 2xl:leading-[21px] 3xl:leading-[25px] xl:mb-[11px] 2xl:mb-[13px] 3xl:mb-[16px] lg:mb-[9px] not-italic text-bluegray_700 text-center w-[87%]; 
+}
+.div35{
+ @apply font-medium lg:mb-[3px] 2xl:mb-[4px] xl:mb-[4px] 3xl:mb-[5px] lg:ml-[15px] xl:ml-[19px] 2xl:ml-[21px] 3xl:ml-[26px] text-bluegray_900 w-[auto]; 
+}
+.listdiv_one{
+ @apply items-center justify-start lg:my-[3px] 2xl:my-[4px] xl:my-[4px] 3xl:my-[5px] w-[100%]; 
+}
+.div37{
+ @apply font-normal lg:mb-[23px] xl:mb-[28px] 2xl:mb-[32px] 3xl:mb-[38px] not-italic text-bluegray_700 w-[auto]; 
+}
+.div38{
+ @apply font-normal lg:leading-[15px] xl:leading-[19px] 2xl:leading-[21px] 3xl:leading-[25px] mb-[1px] not-italic text-gray_601 w-[83%]; 
+}
+.div42{
+ @apply font-medium mb-[1px] lg:ml-[11px] xl:ml-[14px] 2xl:ml-[16px] 3xl:ml-[19px] text-gray_701 w-[auto]; 
+}
+.div43{
+ @apply font-normal not-italic text-gray_702 w-[auto]; 
+}
+.Three{
+ @apply lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[8px] not-italic text-bluegray_700 w-[auto]; 
+}
+.Amount_One{
+ @apply font-normal lg:ml-[3px] 2xl:ml-[4px] xl:ml-[4px] 3xl:ml-[5px] not-italic text-gray_401 w-[auto]; 
+}
+.div44{
+ @apply font-normal lg:mt-[16px] xl:mt-[21px] 2xl:mt-[23px] 3xl:mt-[28px] not-italic text-gray_702 w-[auto]; 
+}
+.input1{
+ @apply font-normal not-italic p-[0] xl:text-[11px] 2xl:text-[13px] 3xl:text-[16px] lg:text-[9px] text-gray_401 w-[100%]; 
+}
+.div52{
+ @apply font-normal lg:mb-[3px] 2xl:mb-[4px] xl:mb-[4px] 3xl:mb-[5px] not-italic text-bluegray_700 w-[auto]; 
+}
+.div58{
+ @apply font-normal lg:leading-[15px] xl:leading-[18px] 2xl:leading-[21px] 3xl:leading-[25px] xl:mb-[11px] 2xl:mb-[13px] 3xl:mb-[16px] lg:mb-[9px] not-italic text-bluegray_700 text-center w-[88%]; 
+}
+.div71{
+ @apply font-normal mb-[2px] not-italic text-gray_602 w-[auto]; 
+}
+.div72{
+ @apply font-normal lg:leading-[18px] xl:leading-[22px] 2xl:leading-[25px] 3xl:leading-[30px] mb-[1px] not-italic text-gray_700 w-[91%]; 
+}
+.div73{
+ @apply font-normal mb-[1px] not-italic text-gray_700 w-[auto]; 
+}
+.div75{
+ @apply font-normal not-italic text-gray_602 w-[auto]; 
+}
+.Loans{
+ @apply font-medium mb-[1px] lg:ml-[25px] xl:ml-[31px] 2xl:ml-[35px] 3xl:ml-[42px] text-white_A700 w-[auto]; 
+}
+.div85{
+ @apply font-medium mb-[1px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] text-gray_701 w-[auto]; 
+}
+.price_Three{
+ @apply font-medium lg:ml-[12px] xl:ml-[15px] 2xl:ml-[17px] 3xl:ml-[20px] 3xl:mt-[11px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] text-gray_602 w-[auto]; 
+}
+.AvailableCash{
+ @apply font-normal mt-[3px] not-italic text-gray_602 w-[auto]; 
+}
+.div96{
+ @apply font-normal mb-[3px] not-italic text-gray_605 w-[auto]; 
+}
+.div97{
+ @apply bg-gray_202 border-bw5 border-solid border-white_A700 flex font-normal items-center not-italic xl:px-[11px] 2xl:px-[13px] 3xl:px-[16px] lg:px-[9px] rounded-radius50 text-white_A700 w-[40px]; 
+}
